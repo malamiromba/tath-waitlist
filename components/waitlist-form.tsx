@@ -56,7 +56,7 @@ export function WaitlistForm({ onSuccess }: WaitlistFormProps) {
                type="submit"
                size="sm"
                disabled={isPending}
-               className="bg-gradient-to-r from-[#330066] max-sm:hidden to-[#B307C6] hover:from-[#B307C6] hover:to-[#D90089] text-xs md:text-sm text-white font-semibold px-4 rounded-xl transition-all duration-300 ease-in-out focus:outline-none w-[120px] border-0 shadow-lg hover:shadow-xl"
+               className="bg-gradient-to-r h-10 from-[#330066] max-sm:hidden to-[#B307C6] hover:from-[#B307C6] hover:to-[#D90089] text-xs md:text-sm text-white font-semibold px-4 rounded-xl transition-all duration-300 ease-in-out focus:outline-none w-[120px] border-0 shadow-lg hover:shadow-xl"
             >
                {isPending ? (
                   <Loader2 className="h-5 w-5 animate-spin text-white" />

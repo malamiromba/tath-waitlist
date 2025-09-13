@@ -50,7 +50,7 @@ export async function joinWaitlist(prevState: any, formData: FormData) {
         createdAt: new Date()
       });
 
-      console.log("Email inserted with ID:", insertResult.insertedId);
+      // console.log("Email inserted with ID:", insertResult.insertedId);
 
       const count = await getWaitlistCount();
 

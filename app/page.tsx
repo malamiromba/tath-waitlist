@@ -11,7 +11,6 @@ export default function Home() {
          {/* Background grid pattern */}
          <div className="fixed inset-0 bg-grid-pattern-light pointer-events-none z-20" />
 
-         {/* Floating logos */}
          <FloatingLogos />
 
          {/* Scrollable content */}
