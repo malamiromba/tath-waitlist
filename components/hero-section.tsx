@@ -31,7 +31,7 @@ export function HeroSection() {
             </h1>
 
             <p className="text-sm sm:text-xl md:text-2xl mb-12 text-gray-700 max-w-3xl mx-auto leading-relaxed text-balance">
-               A platform where you learn everything about tech, wide lessons
+               A platform where you learn everything about tech, with lessons
                delivered in English and Hausa.
             </p>
          </div>
