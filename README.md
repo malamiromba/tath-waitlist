@@ -20,6 +20,24 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Environment Variables
+
+Create a `.env` file based on `.env.example`:
+
+- `MONGODB_URI`: Your MongoDB connection string
+
+## Database Schema
+
+The application uses a simple MongoDB collection structure:
+
+```javascript
+// Collection: waitlist_emails
+{
+  email: String,      // The email address (unique)
+  createdAt: Date     // Timestamp when the email was added
+}
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
