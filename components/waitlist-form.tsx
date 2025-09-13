@@ -66,16 +66,16 @@ export function WaitlistForm({ onSuccess }: WaitlistFormProps) {
             </Button>
          </div>
          <Button
-               type="submit"
-               size="sm"
-               disabled={isPending}
-               className="bg-gradient-to-r from-[#330066] to-[#B307C6] hover:from-[#B307C6] hover:to-[#D90089] text-xs md:text-sm text-white font-semibold px-4 rounded-xl transition-all duration-300 ease-in-out focus:outline-none w-full sm:hidden border-0 shadow-lg hover:shadow-xl"
-            >
-               {isPending ? (
-                  <Loader2 className="h-5 w-5 animate-spin text-white" />
-               ) : (
-                  "Get Notified"
-               )}
+            type="submit"
+            size="sm"
+            disabled={isPending}
+            className="bg-gradient-to-r max-sm:h-12 from-[#330066] to-[#B307C6] hover:from-[#B307C6] hover:to-[#D90089] text-xs md:text-sm text-white font-semibold px-4 rounded-xl transition-all duration-300 ease-in-out focus:outline-none w-full sm:hidden border-0 shadow-lg hover:shadow-xl"
+         >
+            {isPending ? (
+               <Loader2 className="h-5 w-5 animate-spin text-white" />
+            ) : (
+               "Get Notified"
+            )}
          </Button>
       </form>
    );

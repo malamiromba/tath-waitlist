@@ -9,14 +9,14 @@ import { FacebookIcon } from "./icons/facebook-icon";
 import { WhatsAppIcon } from "./icons/whatsapp-icon";
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { motion } from "framer-motion";
+import { motion, easeOut } from "framer-motion";
 
 export function HeroSection() {
    const [waitlistCount, setWaitlistCount] = useState(100);
    const [showForm, setShowForm] = useState(false);
 
    const handleSuccess = (count: number) => {
-      setWaitlistCount(count + 1);
+      //  setWaitlistCount(count + 1)
    };
 
    const socialIconVariants = {
@@ -28,7 +28,7 @@ export function HeroSection() {
             duration: 2,
             repeat: Number.POSITIVE_INFINITY,
             repeatType: "reverse" as const,
-            ease: "easeInOut" as const,
+            ease: easeOut,
          },
       },
       hover: {
@@ -54,7 +54,7 @@ export function HeroSection() {
       animate: {
          y: 0,
          opacity: 1,
-         transition: { duration: 0.6, ease: "easeOut" as const },
+         transition: { duration: 0.6, ease: easeOut },
       },
    };
 
@@ -129,7 +129,7 @@ export function HeroSection() {
                      rel="noopener noreferrer"
                      aria-label="X (formerly Twitter)"
                      icon={<XIcon className="w-8 h-8" />}
-                     className="bg-gray-900 hover:bg-gray-800 text-white p-4 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 relative overflow-hidden group"
+                     className="w-16 h-16 flex items-center justify-center text-white rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 relative overflow-hidden group"
                      style={{
                         background:
                            "linear-gradient(135deg, #1f2937 0%, #374151 100%)",
@@ -154,7 +154,7 @@ export function HeroSection() {
                      rel="noopener noreferrer"
                      aria-label="Facebook"
                      icon={<FacebookIcon className="w-8 h-8" />}
-                     className="text-white p-4 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 relative overflow-hidden group"
+                     className="w-16 h-16 flex items-center justify-center text-white rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 relative overflow-hidden group"
                      style={{
                         background:
                            "linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)",
@@ -179,7 +179,7 @@ export function HeroSection() {
                      rel="noopener noreferrer"
                      aria-label="WhatsApp"
                      icon={<WhatsAppIcon className="w-8 h-8" />}
-                     className="text-white p-4 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 relative overflow-hidden group"
+                     className="w-16 h-16 flex items-center justify-center text-white rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 relative overflow-hidden group"
                      style={{
                         background:
                            "linear-gradient(135deg, #ec4899 0%, #db2777 100%)",
